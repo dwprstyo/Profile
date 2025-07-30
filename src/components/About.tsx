@@ -1,6 +1,5 @@
-
-import { Code2, Palette, Zap } from 'lucide-react';
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { Code2, Palette, Zap } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const About = () => {
   const { ref: textRef, isVisible: textVisible } = useScrollAnimation(0.2);
@@ -10,10 +9,12 @@ const About = () => {
   return (
     <section id="about" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div 
-          ref={textRef} 
+        <div
+          ref={textRef}
           className={`text-center mb-16 transition-all duration-1000 transform ${
-            textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+            textVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-20"
           }`}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -22,17 +23,19 @@ const About = () => {
             <span className="text-gradient">Project Collections</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Saya mengkhususkan diri dalam menciptakan solusi digital yang inovatif 
-            dengan kombinasi desain yang menawan dan teknologi terdepan.
+            I specialize in creating innovative digital solutions by combining
+            captivating design with cutting-edge technology.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Cards */}
-          <div 
-            ref={cardsRef} 
+          <div
+            ref={cardsRef}
             className={`space-y-6 transition-all duration-1000 delay-300 transform ${
-              cardsVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
+              cardsVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-20"
             }`}
           >
             <div className="glass-card p-6 rounded-2xl hover:glow-effect transition-all duration-300 transform hover:scale-105">
@@ -41,9 +44,12 @@ const About = () => {
                   <Code2 size={24} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Development</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Development
+                  </h3>
                   <p className="text-gray-300">
-                    Menggunakan teknologi modern untuk membangun aplikasi web dan mobile yang responsif dan performant.
+                    I use React, Angular, Express, and Laravel to build
+                    responsive, fast, and scalable web and mobile applications.
                   </p>
                 </div>
               </div>
@@ -55,9 +61,12 @@ const About = () => {
                   <Palette size={24} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">UI/UX Design</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    UI/UX Design
+                  </h3>
                   <p className="text-gray-300">
-                    Menciptakan pengalaman pengguna yang intuitif dengan desain yang modern dan user-friendly.
+                    Creating intuitive user experiences with modern and
+                    user-friendly designs.
                   </p>
                 </div>
               </div>
@@ -69,9 +78,12 @@ const About = () => {
                   <Zap size={24} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Performance</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Performance
+                  </h3>
                   <p className="text-gray-300">
-                    Optimasi performa tinggi untuk memastikan aplikasi berjalan cepat dan efisien di semua perangkat.
+                    High-performance optimization to ensure applications run
+                    fast and efficiently across all devices.
                   </p>
                 </div>
               </div>
@@ -79,10 +91,12 @@ const About = () => {
           </div>
 
           {/* Visual Element */}
-          <div 
-            ref={visualRef} 
+          <div
+            ref={visualRef}
             className={`flex justify-center lg:justify-end transition-all duration-1000 delay-500 transform ${
-              visualVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
+              visualVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-20"
             }`}
           >
             <div className="relative">

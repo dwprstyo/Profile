@@ -37,7 +37,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-gray-400">
-            © 2024 Portfolio. All rights reserved. Built with ❤️ using React & Tailwind CSS.
+            © 2024 Portfolio. All rights reserved.
           </p>
         </div>
       </div>
