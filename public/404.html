@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dee Developer - Page Not Found</title>
+    <script type="text/javascript">
+      // Store the full URL in sessionStorage to be retrieved by index.html
+      sessionStorage.redirect = location.href;
+    </script>
+    <!-- Use meta refresh to redirect to the SPA's root. The base path is /Profile/ -->
+    <meta http-equiv="refresh" content="0;URL='/Profile/'">
+  </head>
+  <body>
+    <p>If you are not redirected automatically, follow this <a href='/Profile/'>link to the homepage</a>.</p>
+  </body>
+</html>

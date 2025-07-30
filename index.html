@@ -15,6 +15,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+      // This script restores the correct URL for SPAs on GitHub Pages.
+      // It reads the intended URL from sessionStorage, which is set by 404.html.
+      (function() {
+        const redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          // Ensure it's a same-origin redirect before changing the URL
+          if (redirect.includes(location.host)) {
+            history.replaceState(null, null, redirect);
+          }
+        }
+      })();
+    </script>
   </head>
 
   <body>
